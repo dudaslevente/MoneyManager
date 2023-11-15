@@ -19,7 +19,7 @@ function showChart(){
         labels: labels,
         datasets: [
           {
-            label: "Lépésszám:",
+            label: "Money:",
             data: datas,
             borderWidth: 3,
           },
