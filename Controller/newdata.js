@@ -10,28 +10,28 @@ function getToday(){
 function addMoney(){
 
     let date = document.querySelector('#date');
-    let money = document.querySelector('#money');
-    let cim = document.querySelector('#cim');
-    let bevKiad = document.querySelector('#bevKiad');
+    let amount = document.querySelector('#amount');
+    let tag = document.querySelector('#tag');
+    let type = document.querySelector('#type');
 
-    if (date.value == "" || money.value == 0 ){
+    if (date.value == "" || amount.value == 0 || tag.value == "" || type.value == ""){
         showMessage("Nem adtál meg minden adatot!");
     }
     else{
         let data = {
             userID : loggedUser.ID,	
             date : date.value,	
-            money : money.value,
-            cim : cim.value,
-            bevKiad : bevKiad.value
+            amount : amount.value,
+            tag : tag.value,
+            type : type.value
         };
 
         axios.post(`${serverURL}/items`, data).then((res)=>{
             alert('Adat rögzítve!');
             date.value = null;
-            money.value = 0;
-            cim.value = null;
-            bevKiad = null;
+            amount.value = 0;
+            tag.value = null;
+            type.value = "";
         });  
     }
 }
