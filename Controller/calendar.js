@@ -6,8 +6,7 @@ function showCalendar(){
                 title: item.amount,
                 start: item.date,
                 allDay: true,
-                backgroundColor: '#336c56',
-                borderColor: '#336c56',
+                eventTextColor:  '#d0ff00',
             })
         });
     });
@@ -18,7 +17,7 @@ function showCalendar(){
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
         headerToolbar: {
-            left: 'prevYear,prev,next,nextYear today',
+            left: 'prevYear,prev,next,nextYear',
             center: 'title',
             right: 'dayGridMonth,dayGridWeek,dayGridDay,listWeek'
         },

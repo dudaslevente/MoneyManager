@@ -1,26 +1,29 @@
 body{
-    background-color: silver;
+    background-color: lightskyblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
 }
 
 header{
-    background-color: slategray;
+    background-color: darkcyan;
     line-height: 120px;
     min-height: 120px;
-    color: white;
-    text-shadow: 0 0 3px black;
+    color: black;
     text-align: center;
-    font-size: 200%;
+    font-size: 300%;
+    border-radius: 35px;
+    border: 1px solid black;
 }
 
 footer{
-    background-color: black;
-    color: white;                                                                                                                                                                                                                                                                                                                                                                       
-    font-size: 80%;
+    background-color: darkcyan;
+    color: black;                                                                                                                                                                                                                                                                                                                                                                       
+    font-size: 115%;
     letter-spacing: 3px;
     text-align: center;
     padding: 10px;
+    border-radius: 35px;
+    border: 1px solid black;
 }
 
 main{
@@ -28,7 +31,54 @@ main{
 }
 
 .container{
-    background-color: white;
-    box-shadow: 0 0 10px gray;
+    background-color: lightblue;
     padding: 10px;
+    border: 1px solid black;
+}
+
+#loggedOutMenu{
+    font-size: 130%;
+    color: black;
+}
+#loggedInMenu{
+    font-size: 130%;
+    color: black;
+}
+
+#email{
+    border: 1px solid black;
+}
+#passwd{
+    border: 1px solid black;
+}
+#name{
+    border: 1px solid black;
+}
+#confirm{
+    border: 1px solid black;
+}
+#date{
+    border: 1px solid black;
+}
+#type{
+    border: 1px solid black;
+}
+#amount{
+    border: 1px solid black;
+}
+#tag{
+    border: 1px solid black;
+}
+
+.btn{
+    border: 1px solid black;
+}
+
+#tableB{
+    border: 1px solid black;
+}
+
+#calendar{
+    color: black;
+    text-decoration: none;
 }
