@@ -6,7 +6,6 @@ function showCalendar(){
                 title: item.amount,
                 start: item.date,
                 allDay: true,
-                eventTextColor:  '#d0ff00',
             })
         });
     });
@@ -25,6 +24,7 @@ function showCalendar(){
         navLinks: true,
         editable: false,
         dayMaxEvents: true,
+        eventColor: 'blue',
         events: myEvents
         });
         

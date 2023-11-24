@@ -11,20 +11,24 @@ function getAllSteps(){
             let td1 = document.createElement('td');
             let td2 = document.createElement('td');
             let td3 = document.createElement('td');
+            let td4 = document.createElement('td');
 
             i++;
             sum += item.amount;
 
             td1.innerHTML = i + '.';
 
-            td2.innerHTML = item.date.split('T')[0];
+            td2.innerHTML = item.type;
 
-            td3.innerHTML = item.amount;
-            td3.classList.add('text-end');
+            td3.innerHTML = item.date.split('T')[0];
+
+            td4.innerHTML = item.amount;
+            td4.classList.add('text-end');
 
             tr.appendChild(td1);
             tr.appendChild(td2);
             tr.appendChild(td3);
+            tr.appendChild(td4);
             tbody.appendChild(tr);
         });
 

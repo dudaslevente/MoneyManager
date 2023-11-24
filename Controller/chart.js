@@ -19,9 +19,16 @@ function showChart(){
         labels: labels,
         datasets: [
           {
-            label: "Money:",
+            label: "Bevétel",
             data: datas,
-            borderWidth: 3,
+            borderWidth: 2,
+            backgroundColor: 'lightgreen',
+          },
+          {
+            label: "Kiadás",
+            data: datas,
+            borderWidth: 2,
+            backgroundColor: 'lightcoral',
           },
         ],
       },
